@@ -50,7 +50,7 @@ pt-br:
     designs: Designs Personalizados
     authentication: Autenticação de Usuário
   footer:
-    powered_by: Desenvolvido por %{href}.
+    powered_by: Construído com %{href}.
   go_back: Voltar
   greenlight: Greenlight
   header:
@@ -65,9 +65,9 @@ pt-br:
   invalid_credentials: O login falhou devido à credenciais inválidas. Tem certeza que inseriu corretamente?
   invite_message: "Para convidar alguém para a reunião, envie este link:"
   landing:
-    about: Greenlight é um front-end simples para seu servidor de webconferências %{href}. Você pode criar suas próprias salas para hospedar sessões, ou se juntar a outras utilizando um link curto e conveniente.
-    welcome: Bem vindo ao <span class="green-grad">Greenlight</span>.
-    video: Assista ao nosso tutorial sobre como utilizar o Greenlight
+    about: A Wonder Systems Education é o caminho ideal para você se tornar fluente no inglês, com a ajuda de professores nativos, no contexto escolhido por você!
+    welcome: Bem vindo ao livestream da <span class="green-grad">Wonder Systems Education</span>.
+    #video: Assista ao nosso tutorial sobre como utilizar o Greenlight
     upgrade: Mostre-me como atualizar para o 2.0!
     version: Lançamos uma nova versão do Greenlight, entretanto sua base de dados é incompatível.
   ldap_error: Não é possível conectar-se ao servidor LDAP. Verifique sua configuração LDAP no arquivo ENV e certifique-se de que seu servidor está funcionando.
