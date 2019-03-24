@@ -10,6 +10,9 @@ ENV RAILS_ROOT /usr/src/app
 RUN mkdir -p $RAILS_ROOT
 WORKDIR $RAILS_ROOT
 
+COPY Gemfile $RAILS_ROOT/Gemfile
+COPY Gemfile.lock $RAILS_ROOT/Gemfile.lock
+
 # Set environment variables.
 ENV RAILS_ENV production
 
@@ -17,7 +20,8 @@ ENV RAILS_ENV production
 COPY . .
 
 # Install gems.
-RUN bundle install --without development test --deployment --clean
+#RUN bundle install --without development test --deployment --clean
+RUN bundle install
 
 # Precompile assets.
 RUN bundle exec rake assets:clean

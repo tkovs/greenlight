@@ -3,15 +3,20 @@ version: '3'
 services:
   app:
     entrypoint: [bin/start]
-    image: bigbluebutton/greenlight:v2
-    container_name: greenlight-v2
+    #image: bigbluebutton/greenlight:v2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: greenlight:wonse
+    container_name: greenlight-wonse
     env_file: .env
     restart: unless-stopped
     ports:
       - 5000:80
     volumes:
-      - ./db/production:/usr/src/app/db/production
-      - ./log:/usr/src/app/log
+      #- ./db/production:/usr/src/app/db/production
+      #- ./log:/usr/src/app/log
+      - .:/usr/src/app
 #    logging:
 #      driver: $LOG_DRIVER
 #      options:
